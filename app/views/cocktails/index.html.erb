@@ -3,6 +3,7 @@
   <%@cocktails.each do |cocktail|%>
   <div class="card-cocktail col-md-3">
     <h3><%=cocktail.name%></h3>
+    <%= cl_image_tag cocktail.photo, height: 300, width: 400, crop: :fill %>
     <%=link_to "More infos", cocktail_path(cocktail)%>
     <%#=image_tag("cocktail.jpg",width: 500) %>
 
