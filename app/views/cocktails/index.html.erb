@@ -3,15 +3,15 @@
   <%@cocktails.each do |cocktail|%>
   <div class="card-cocktail col-md-3">
     <h3><%=cocktail.name%></h3>
-  </div>
-  <div class="footer">
-  <%=link_to "More infos", cocktail_path(cocktail)%>
+    <%=link_to "More infos", cocktail_path(cocktail)%>
+    <%#=image_tag("cocktail.jpg",width: 500) %>
+
   </div>
   <% end %>
   </div>
 </div>
 <br>
 <br>
-<%= link_to "Add a cocktail", new_cocktail_path%>
+<%= link_to "Add a cocktail", new_cocktail_path, class: "btn btn-primary"%>
 
 

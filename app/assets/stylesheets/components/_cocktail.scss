@@ -1,0 +1,14 @@
+
+.card-cocktail {
+  border: 1px solid grey;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  position: relative;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
