@@ -1,4 +1,6 @@
-<h1><%= @cocktail.name %></h1>
+<div class="card-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path @cocktail.photo %>)">
+  <h1><%= @cocktail.name %></h1>
+</div>
 <br><% @cocktail.doses.each do |dose|%></h1>
 <p><%=dose.description%></p>
 <p><%=dose.ingredient.name%></p>
